@@ -35,14 +35,17 @@ function digitalClock() {
 
 function setAlrmTime() {
     var timeString = String(document.getElementById("alarmTimeSelect").value);
-    console.log(timeString);
     alHours = timeString.charAt(0) + timeString.charAt(1);
     alMinutes = timeString.charAt(3) + timeString.charAt(4);
     alHours = alHours%12;
     if (alHours < 10) {
       alHours = "0" + alHours;
     }
-    document.getElementById("alarm").innerHTML = 'Alarm: ' + alHours + ':' + alMinutes;    
+    document.getElementById("alarm").innerHTML = 'Alarm at: ' + alHours + ':' + alMinutes;    
+}
+
+function clearAlrmTime() {
+  document.getElementById("alarm").innerHTML = 'Alarm not set';    
 }
 
 
@@ -66,7 +69,7 @@ function snooze() {
             String(alHours );
         }
     
-        document.getElementById("startup").innerHTML = 'Alarm: ' + alHours + ':' + alMinutes;
+        document.getElementById("startup").innerHTML = 'Next Alarm at: ' + alHours + ':' + alMinutes;
     }    
 }
 
