@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background: #0d2c3b;
+  font-family: 'Orbitron', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+    padding: 2rem;
+}
+button{
+    cursor: pointer;
+    margin: 1rem 5rem;
+    padding: 1rem 4rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    outline: 0;
+    font-size: 2rem;
+
+    /* transition: all ease  300ms; */
+}
+input, #alarm{
+    font-size: 2rem;
+}
+/* button:hover{
+    background: #fff;
+} */
+/* .table{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.cell{
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+} */
+.hide{
+    display: none;
+}

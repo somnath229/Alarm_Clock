@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="alarmClock.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="table">
+            <div class="cell">
+                <h1 id="clock" class="clock"></h1>
+                <input type="time" name="alarmTimeSelect" id="alarmTimeSelect" value="12:00">
+                <!-- <select id="hours"></select>
+                <select id="hours"></select>
+                <select id="hours"></select> -->
+                <!-- <select id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select> -->
+                <p>
+                    <button id="snoozAlrm" onclick="snooze()">Snoze</button>
+                    <button id="startup" onclick="setAlrmTime()">Set Alarm</button>
+                </p>
+                <h3 id="alarm">Alarm not set</h3>
+            </div>
+        </div>
+    </div>
+    <script src="alarmClock.js"></script>
+</body>
+
+</html>
